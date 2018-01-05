@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace='com.TestDemo.dao.IProductDAO'>
+	<sql id='selectProduct'>
+		select id,name,imagepath,category,cid,price,myprice,amount,
+		publishtime,descp, professor,memory,disk,Graphics,monitor
+	</sql>
+<!--查所有  -->
+	<select id='selectAll' resultType='Product'>
+		<include refid='selectProduct'></include> from goods
+	</select>
+<!--新电脑  -->
+	<select id='selectProductByaddtime' resultType='Product'>
+		<include refid='selectProduct'></include>
+		from (<include refid='selectProduct'></include> from goods order by publishtime desc) where rownum&lt;=4
+	</select>
+<!--热卖 -->
+	<select id='selectProductBysale' resultType='Product'>
+		<include refid='selectProduct'></include>
+		from (<include refid='selectProduct'></include> from goods order by myprice desc) where rownum&lt;=4
+	</select>
+<!--新书热卖  -->
+	<select id='selectProductByaddtimeAndsale' resultType='Product'>
+		<include refid='selectProduct'></include>
+		from (<include refid='selectProduct'></include> from goods order by putaway,sale desc) where rownum&lt;=8
+	</select>
+<!-- 编辑推荐 -->
+	<select id='selectProductByedit' resultType='Product'>
+		<include refid='selectProduct'></include>
+		from (<include refid='selectProduct'></include> from goods where editorrecommendstatus='yes') where rownum&lt;=4
+	</select>
+<!--通过id查  -->
+	<select id='selectProductById' parameterType='int' resultType='Product'>
+	<include refid='selectProduct'></include>
+	from goods where id=#{id}
+	</select>
+<!--根据类别查电脑的数量  -->
+	<select id='selectProductCount' resultType='int'>
+		select count(id) from goods where cid in
+		<foreach collection='cids' item='cid' open='(' separator=',' close=')'>
+			#{cid}
+		</foreach>
+	</select>
+<!--根据类别显示所有书  -->
+	<select id='selectProductByCategory' resultMap='product'>
+		select * from
+		(<include refid='selectProduct'></include>,rownum rn from
+		(<include refid='selectProduct'></include> from goods where cid in 
+		<foreach collection='cids' item='cid' open='(' separator=',' close=')'>
+			#{cid}
+		</foreach>
+		order by publishtime))
+		where rn between (#{currentPage}-1)*#{pageSize} and #{currentPage}*#{pageSize}
+	</select>
+	<resultMap type="Product" id="product">
+		<id property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="imagepath" column="imagepath" />
+		<result property="soncategory" column="soncategory" />
+		<result property="cid" column="cid" />
+		<result property="price" column="price" />
+		<result property="myprice" column="myprice" />
+		<result property="amount" column="amount" />
+		<result property="edition" column="edition" />
+		<result property="publishtime" column="publishtime" />
+		<result property="descp" column="descp" />
+		<result property="professor" column="professor" />
+		<result property="memory" column="memory" />
+		<result property="disk" column="disk" />
+		<result property="Graphics" column="Graphics" />
+		<result property="monitor" column="monitor" />
+		<result property="category" column="category" />
+	</resultMap>
+</mapper>

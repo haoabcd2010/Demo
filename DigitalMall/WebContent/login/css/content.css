@@ -1,0 +1,86 @@
+.left{
+	width: 60%;
+	height: 360px;
+	padding-top: 15px;
+	padding-bottom: 45px;
+	margin: auto;
+	float: left;
+}
+.left .introduce{
+	width: 430px;
+	height: 180px;
+	margin-top: 65px;
+	float: right;
+	
+}
+.left .introduce ul{
+	list-style: none;
+	line-height: 18px;
+	border-top: solid 1px #bab9b9;
+	padding: 10px 0 0 2px;
+	font-size: 12px;
+	
+}
+.left .introduce .bg{
+	
+	background: url(../images/bj_d_black.gif) no-repeat left 7px;
+	padding-left: 15px;
+	margin-top: 10px;
+}
+.left .introduce  .n_bg{
+	margin-left: 15px;
+	color: #757575;
+	margin-top: 2px;
+}
+
+.right{
+	width: 39%;
+	height: 360px;
+	margin: auto;
+	float: left;
+	padding-top: 15px;
+	padding-bottom: 45px;
+	margin: auto;
+	float: left;
+}
+.right .form{
+	width:278px;
+	height:342px;
+	background-color:#F9F9F9;
+	border: 1px solid #7A7977;
+	-webkit-border-radius:7px;
+	margin-left: 10px;
+}
+.right .form h4{
+	color:#414141;
+	margin-left: 10%;
+	font-size: 15px;
+}
+.right .form form{
+	margin-left: 10%;
+}
+.right .form form td{
+	color:#414141;
+	font-size:12px;
+	text-align: right;
+}
+.right .form .bottom_clear{
+	margin-top:30px;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	border-top: 1px dashed #7A7977;
+}
+.right .form a{
+	color: blue;
+	text-decoration: none;
+	font-size:14;
+	float:right;
+	margin-right: 10px;
+	font-weight:bold;
+}
+.right .form a:Hover{
+	color: #FF7000;
+	text-decoration: underline;
+	font-weight:bold;
+}

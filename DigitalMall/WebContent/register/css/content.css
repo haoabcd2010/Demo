@@ -1,0 +1,92 @@
+.container{
+	width: 100%;
+	height: 100%;
+}
+.step{
+	text-align: center;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.step .current{
+	color:red;
+	font-weight:bold; 
+}
+
+.form{
+	width: 90%;
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.form h4{
+	color: red;
+}
+.form table{
+	width: 100%;
+	display: table;
+	border-collapse: collapse;
+	border-spacing: 1px;
+	border-color: gray;
+	border: 1px solid #DADADA;
+	margin-top:25px;
+	margin-bottom: 50px;
+}
+.form table caption{
+	text-align: left;
+	color: red;
+}
+.form table td{
+	display: table-cell;
+}
+.form .td1{
+	font-size: 13px;
+	width: 150px;
+	background-color:#E8FBFF; 
+	padding: 10px 0px 10px 10px;
+	text-align: right;
+	border: 1px solid #DADADA;
+	color: #414141;
+}
+.form .td2{
+	font-size: 13px;
+	width: 180px;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	border-bottom: 1px solid #DADADA;
+}
+.form .td3{
+	border-bottom: 1px solid #DADADA;
+}
+.form .info{
+	font-size: 12px;
+	line-height: 50px;
+	color: #414141;
+}
+.form table .imgcheck {
+	float: left;
+	border: none;
+}
+.form table .imgcheck img{
+	width: 85px;
+	height: 35px;
+	float: left;
+}
+.form table .imgcheck input{
+	width: 60px;
+	margin-top: 0px;
+	margin-left:2px;
+	margin-top:7px;
+	float: left;
+}
+.form table .info a:hover{
+	color: orange;
+}
+.form table tfoot{
+	text-align: center;
+}
+.form table tfoot input{
+	width: 100px;
+}

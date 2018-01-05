@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<!--用户登录注册  -->
+	<package name='user' namespace='/user' extends='struts-default'>
+		<action name='UserAction_*' class='com.TestDemo.action.UserAction' method='{1}'>
+			<result name='shouye'>/main/index.jsp</result>
+			<result name='denglu'>/login/index.jsp</result>
+			<result name='zhuce'>/register/index.jsp</result>
+			<result name='showaddress' type='chain'>
+			<param name='namespace'>/address</param>
+			<param name='actionName'>AddressAction_showAddress</param>
+			</result>
+		</action>
+	</package>
+<!--类别显示  -->
+	<package name='category' namespace='/category' extends='struts-default'>
+		<action name='CategoryAction_*' class='com.TestDemo.action.CategoryAction' method='{1}'>
+			<result name="content">/main/content.jsp</result>
+			<result name="index">/category/index.jsp</result>
+		</action>
+	</package>
+<!--product显示  -->
+	<package name='product' namespace='/product' extends='struts-default'>
+		<action name='ProductAction_*' class='com.TestDemo.action.ProductAction' method='{1}'>
+			<result name='content'>/main/content.jsp</result>
+			<result name='index'>/product/index.jsp</result>
+		</action>
+	</package>
+<!--购物车相关操作  -->
+	<package name='cart' namespace='/cart' extends='struts-default'>
+		<action name='CartAction_*' class='com.TestDemo.action.CartAction' method='{1}'>
+			<result name='cart'>/cart/cart.jsp</result>
+			<result name='showcart' type='chain'>CartAction_showCart</result>
+		</action>
+	</package>
+<!--订单相关操作  -->
+	<package name='order' namespace='/order' extends='struts-default'>
+		<action name='OrderAction_*' class='com.TestDemo.action.OrderAction' method='{1}'>
+			<result name='order'>/order/orderInfo.jsp</result>
+			<result name='orderok'>/order/orderOk.jsp</result>		
+		</action>
+	</package>
+<!--订单相关操作  -->
+	<package name='order' namespace='/order' extends='struts-default'>
+		<action name='OrderAction_*' class='com.TestDemo.action.OrderAction' method='{1}'>
+			<result name='order'>/order/orderInfo.jsp</result>
+			<result name='orderok'>/order/orderOk.jsp</result>		
+		</action>
+	</package>
+<!--地址相关的操作  -->
+	<package name='address' namespace='/address' extends='struts-default'>
+		<action name='AddressAction_*' class='com.TestDemo.action.AddressAction' method='{1}'>
+			<result name='showaddress' type='chain'>AddressAction_showAddress</result>
+			<result name='address'>/order/addressForm1.jsp</result>
+		</action>
+	</package>
+</struts>
+

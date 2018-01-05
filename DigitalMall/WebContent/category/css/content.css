@@ -1,0 +1,170 @@
+.location{
+	width: 100%;
+	height: 25px;
+	margin-top:5px;
+	margin-left:5px;
+	margin-bottom:0px;
+	font-size: 16px;
+}
+.location > a{
+	font-size: 16px;
+}
+.location > font{
+	font-size: 16px;
+}
+.content{
+	width: 100%;
+	padding-top:0px;
+	margin-right:auto; 
+    margin-left:auto;
+	background: white;
+	text-align: left;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+	float: left;
+	border: 2px silver solid;
+}
+.content_left{
+	float:left;
+	width: 20%;
+	padding-left:4px;
+	padding-bottom: 40px;
+}
+.content_left .category{
+	width:100%;
+	height:100%;
+	background-color: white;
+	border: 1px #D3D3D3 solid;
+	text-align: center;
+	padding-bottom: 40px;
+}
+.content_left .category{
+	width:100%;
+	height:100%;
+	background-color: white;
+	border: 1px #D3D3D3 solid;
+	text-align: center;
+	padding-bottom: 40px;
+}
+.category h2{
+	text-align: left;
+	background-image: url('../images/book_c_jianbian.gif');
+	background-repeat: repeat-x repeat-y;
+	font-size: 14px;
+    color: #853200;
+    padding-left: 12px;
+    border: solid 1px #fff4d7;
+    height: 23px;
+    line-height: 23px;
+}
+.category .second_fenlei{
+	width: 100%;
+	height: 25px;
+	margin-top:20px;
+	text-align: left;
+}
+.category .second_fenlei > font{
+	font-size: 18px;
+}
+.category .second_fenlei a{
+	padding-left: 10px;
+	color: black;
+	font-size: 16px;
+}
+.category .second_fenlei a:hover{
+	background-color:  #FFF4D7;
+	color: #CC3300;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.content_center{
+	float:left;
+	width: 79%;
+	height: 100%;
+	margin-left:4px;
+	padding: 1px;
+	border: 1px #D3D3D3 solid;
+	
+}
+.content_center .content_header{
+	width: 100%;
+	background-color:#CCCCCC;
+	height: 40px;
+	line-height: 29px;
+}
+.content_center .content_header span{
+	display:block;
+	float:left;
+	font-size: 14px;
+	margin-top: 4px;
+	margin-left: 10px;
+}
+.content_center .content_header table{
+	float:left;
+	font-size: 14px;
+}
+
+.content_center .content_list{
+	width: 100%;
+	height: 100%;
+}
+.content_center .content_list .content_list_item{
+	margin-top:20xp;
+	float: left;
+    width: 100%;
+    margin-top:10px;
+}
+.content_center .content_list .content_list_item_img {
+	float: left;
+	padding: 5px;
+	width:160px;
+	height: 160px;
+    font-weight: bold;
+    margin: 0px;
+}
+.content_center .content_list .content_list_item_img img{
+	border: 0;
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0;
+}
+.content_center .content_list .content_list_item_content{
+	float: left;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content_center .content_list .content_list_item_content h3{
+	margin-top: 20px;
+}
+.content_center .content_list .content_list_item_content h3 >a{
+	font-size: 22px;
+	font-weight: normal;
+}
+.content_center .content_list .content_list_item_content h4{
+	margin-top: 10px;
+	font-size: 12px;
+	font-weight: normal;
+}
+.content_center .content_list .content_list_item_content h4 >span{
+	font-size: 18px;
+	color:  black;
+	font-weight: normal;
+}
+.content_center .content_list .content_list_item_content h6{
+	margin-top: 15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.content_center .content_list .content_list_item_content h6 .del{
+	text-decoration: line-through;
+	color: #777777;
+}
+.content_center .content_list .content_list_item_content .bottom_line{
+	width: 100%;
+	margin-top:20px;
+	border-bottom: 1px dotted silver;
+}

@@ -1,0 +1,257 @@
+.content{
+	width: 100%;
+	padding-top:0px;
+	margin-right:auto; 
+    margin-left:auto;
+	background: white;
+	text-align: left;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+	float: left;
+	border: 2px silver solid;
+}
+.content_left{
+	float:left;
+	width: 20%;
+	padding-left:4px;
+	padding-bottom: 40px;
+}
+.content_left .category{
+	width:100%;
+	height:100%;
+	background-color: white;
+	border: 1px #D3D3D3 solid;
+	text-align: center;
+	padding-bottom: 40px;
+}
+.category h2{
+	text-align: left;
+	background-image: url('../images/book_c_jianbian.gif');
+	background-repeat: repeat-x repeat-y;
+	font-size: 14px;
+    color: #853200;
+    padding-left: 12px;
+    border: solid 1px #fff4d7;
+    height: 23px;
+    line-height: 23px;
+}
+.category_item{
+	width:100%;
+	text-align:left;
+    line-height: 23px;
+    margin-top: 15px;
+}
+
+.category_item:hover{
+	background-color: white;
+}
+
+.category_item h3  a{
+	font-size: 16px;
+	color: #777;
+	background-color: white;
+	margin-left: 15px;
+}
+
+.category_item h3 a:hover{
+	color: blue;
+	text-decoration:none;
+	background-color:  #FFF4D7;
+}
+
+.category_item  ul{
+	padding-left: 7px;
+    display: block;
+    list-style: none;
+    width: 100%x;
+}
+
+.category_item ul a{
+	font-size:16px;
+}
+
+.category_item  li{
+    padding: 0 8px 0 7px;
+    background: url(../images/li_r_bg.gif) no-repeat right 5px;
+    display: inline;
+    word-break: keep-all;
+    white-space: nowrap;
+    margin-top: 4px;
+}
+.category_item ul li a{
+	cext-decoration: none;
+	margin-top: 4px;
+    color: #666;
+    font-family: "ËÎÌו";
+    font-size: 12px;
+}
+.category_item ul li a:hover{
+	text-decoration: underline;
+	font-size: 12px;
+	background-color:  #FFF4D7;
+	padding: 0;
+	font-weight: normal;
+}
+
+.category_item .bottom_line{
+	border-bottom: 1px silver dotted;
+	margin-top:10px;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.content_center{
+	float:left;
+	width: 78%;
+	height: 100%;
+	margin-left:4px;
+}
+.center_category{
+	width: 101.5%;
+	border: 1px silver solid;
+	float:left;
+	margin-bottom: 20px;
+}
+.center_category h2{
+	width: 98%;
+	font-size: 14px;
+    color: #853200;
+    text-align: left;
+	background-image: url('../images/book_c_jianbian.gif');
+	background-repeat: repeat-x repeat-y;
+	height: 25px;
+    line-height: 22px;
+    font-weight: bold;
+    padding-left: 2%;
+}
+.center_category a{
+	font-size: 22px;
+    color: #853200;
+	height: 25px;
+    line-height: 22px;
+    font-weight: normal;
+    padding-left: 2%;
+    cursor: pointer;
+}
+.center_category a:hover{
+	background:transparent!important;
+	text-decoration:underline ;
+}
+.center_item_tj{
+	width: 100%;
+	float: left;
+	padding: 2px;
+}
+
+.center_item_tj:hover{
+	background-color: #E2E2E2;
+}
+
+.center_item_tj_img{
+	padding: 5px 5px 5px 5px;
+	float: left;
+}
+.center_item_tj img{
+	border: 0;
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.center_item_tj_content{
+	float: left;
+	padding: 10px 10px 10px 10px;
+	line-height: 25px;
+	width:600px;
+    font-weight: bold;
+}
+.center_item_tj_content h3 a{
+	color: black;
+	font-weight: normal;
+	line-height: 20px;
+	padding-left: 10px;
+}
+
+.center_item_tj_content h4{
+	color: black;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 20px;
+	margin-top: 0px;
+	padding-left: 10px;
+}
+
+.center_item_tj_content h4 > span{
+	font-size: 18px;
+}
+.center_item_tj_content h6{
+	color: red;
+	font-size: 18px;
+	font-weight: 18px;
+	line-height: 20px;
+	margin-top: 15px;
+	padding-left: 10px;
+}
+.center_item_tj_content h6 >del{
+	color: #777777;
+	text-decoration: line-through;
+}
+
+.center_item_tj_content .bottom_line{
+	border-bottom: 1px silver dotted;
+	margin-top:15px;
+	width: 90%;
+	margin-left: 5%;
+}
+
+
+.center_item_zxsj{
+	float: left;
+	width:140px;
+	margin-top:4px;
+	margin-left: 1%;
+}
+.center_item_zxsj:hover{
+	background-color: #E2E2E2;
+}
+.center_item_zxsj_img{
+	float: left;
+	width:80px;
+	margin-top:20px;
+	margin-left:10px;
+}
+.center_item_zxsj_content{
+	float: left;
+	width:140px;
+	margin-top:8px;
+	text-align: center;
+}
+.center_item_zxsj_content a{
+	color: #1A66B3;
+	font-weight: normal;
+	text-align:center;
+	font-size:15px;
+	line-height: 15px;
+	text-decoration: none;
+}
+.center_item_zxsj_content a:hover{
+	color: #1A66B3;
+	font-weight: normal;
+	text-align:center;
+	font-size:12px;
+	line-height: 15px;
+	text-decoration: underline;
+	background-color: white;
+}
+
+.center_item_zxsj_content p{
+	color: #404040;
+	font-weight: normal;
+	text-align:center;
+	font-size:12px;
+	line-height: 15px;
+}
+.content_right{
+	float: right;
+	width: 19%;
+	height: 100%;
+}

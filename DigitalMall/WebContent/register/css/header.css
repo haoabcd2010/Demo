@@ -1,0 +1,19 @@
+.header{
+	width: 100%;
+	height:15%;
+    float: left;
+}
+.header .logo{
+	width: 100%;
+	height:80%;
+    position: relative;
+}
+.header .logo img{
+	position:absolute;
+	bottom: 10px;
+	left: 0px;	
+}
+.header .bottom_line{
+	width: 100%;
+	border-bottom: 3px #F27B21 solid;
+}

@@ -1,0 +1,68 @@
+.header{
+	width: 100%;
+    background-color: white;
+}
+.top{
+	height: 34px;
+	width: 100%;
+    margin-top: 20px;
+    background-color: #E2E2E2;
+    border: 2px silver solid;
+}
+.weclome_left {
+	float: left;
+	height: 25px;
+	margin-top:25px;
+	margin-left: 40px;
+}
+.weclome_left span{
+	line-height: 18px;
+}
+.weclome_left  a{ 
+	padding: 10px;
+}
+
+.weclome_right {
+	float: right;
+	height: 25px;
+	padding-left:20px;
+	margin-top:25px;
+	margin-right: 50px;
+	background-image: url("../images/CART_BG1.gif");
+	background-repeat: no-repeat; 
+	background-positon: 100%, 100%;
+}
+.weclome_right span{
+	line-height: 18px;
+}
+.weclome_right a{ 
+	padding: 10px;
+}
+
+.logo{
+	height: 80px;
+	width: 100%;
+	background-color: white;
+	border: 2px silver solid;
+}
+.logo h1 {
+    float: left;
+    border: 0;
+    margin-top: 22px;
+    margin-left: 69px;
+    font-size: 35px;
+    color: #F27B21;
+}
+.logo a:hover{
+	background-color: white;
+}
+.logo div{
+	float: left;
+	width: 200px;
+	height: 100%;
+}
+.logo div img{
+	width: 200px;
+	height: 100%;
+	border: none;
+}
